@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "wallpaper-galaxy-blue-7-starry-star-sky-iphone-6-plus-wallpaper-bvaaynp3eq7tmp4y.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

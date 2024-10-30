@@ -49,7 +49,6 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Vsx-0Y-47l" firstAttribute="centerY" secondItem="ORa-bd-Ich" secondAttribute="centerY" id="310-Gp-T4e"/>
                                     <constraint firstAttribute="trailing" secondItem="Vsx-0Y-47l" secondAttribute="trailing" constant="50" id="CSr-IP-lma"/>
