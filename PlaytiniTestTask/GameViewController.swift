@@ -10,6 +10,8 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    
+    var gameScene: GameScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,8 @@ class GameViewController: UIViewController {
                 // Set the scale mode to scale to fit the window
                 sceneNode.scaleMode = .aspectFill
                 
+                gameScene = sceneNode
+                
                 // Present the scene
                 if let view = self.view as! SKView? {
                     view.presentScene(sceneNode)
@@ -36,7 +40,7 @@ class GameViewController: UIViewController {
             }
         }
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -47,5 +51,14 @@ class GameViewController: UIViewController {
 
     override var prefersStatusBarHidden: Bool {
         return true
+    }
+    
+    
+    @IBAction func plusButtonPress(_ sender: UIButton) {
+        gameScene.plusButtonPress(sender: sender)
+    }
+    
+    @IBAction func minusButtonPress(_ sender: UIButton) {
+        gameScene.minusButtonPress(sender: sender)
     }
 }
